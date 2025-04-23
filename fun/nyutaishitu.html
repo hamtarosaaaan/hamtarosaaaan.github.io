@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>Copypen-Itagaki</title>
+  <meta name="description" content="Copypenの詳細">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../home.css">
+  <link rel="stylesheet" href="../products.css">
+  <link rel="stylesheet" href="../detail_product.css">
+
+  <!-- [if lt IE 9] -->
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <!-- [endif] -->
+
+  <script src="IE_web.js"></script>
+</head>
+
+<body>
+  <div class="for-pc">
+    <header class="header">
+      <div class="header-inner inner">
+        <a href="../index.html" class="header-Itagaki">Tomoya Itagaki</a>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a class="header-nav-item-link" href="../index.html"
+                style="text-decoration:none;"><b>PROFILE</b></a></li>
+            <li class="header-nav-item"><a class="header-nav-item-link" href="../products.html" style="text-decoration:none;"><b>制作物</b></a></li>
+            <li class="header-nav-item"><a class="header-nav-item-link" href="../fun.html"><b>趣味など</b></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ここから書く(PC) -->
+      <h1 class="heading">自作 入退室管理システム</h1>
+
+      <div class="Detailed-production">
+
+        <div class="product-section">
+          <div class="flex-text">
+            <h2 class="subheading">概要</h2>
+            <p>
+              入退室管理システムを自作しました．<br>
+              M5StickCとRFID Unitを使用しています．<br>
+              <br>
+              入室or退室，ユーザ名，時刻をGoogleスプレッドシートに記録します．Google Apps Scriptで自動的に記録されます．<br>
+              入室or退室はRFIDを読み取ったときに退室状態なら入室のように判定，ユーザ名はRFIDの読み取った値によって判定しています．<br>
+              時刻はスプレッドシートについている機能で記録しています．<br>
+              <br>
+              2024年5月頃から研究室のデスクに設置しており，登下校の際は必ずRFIDをスキャンさせています，
+
+
+            </p>
+          </div>
+          <div class="youtube">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ROGi-JMKhYQ?si=eshFo8r3BG_lh5_b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          </div>
+        </div>
+
+
+
+        <div class="product-section">
+          <div class="flex-text">
+            <h2 class="subheading">応用・考察</h2>
+            <p>
+              スプレッドシートをうまいことやると，右図のような可視化ができます．<br>
+              左から0時，1時，2時．．．23時，24時となっていて，
+              黄緑が入室，赤色が退室で，濃い緑が学校にいる時間帯です．<br>
+              <br>
+              これは11月分なのですが，とても研究室に通っているのが分かります．<br>
+              12月頭にあるWISSに向けて頑張っていた時期ですね．<br>
+              <br>
+              また，時刻の下のSUM_Entryを見ると，12時によく研究室に来ることが分かります．<br>
+              おそらく，13時ちょうどに食堂が閉まるからでしょう．<br>
+              間に合わず13時に来ることもしばしばあるようです<br>
+              <br>
+              自分の生態が知れてかなり面白いです．<br>
+              作ってよかったと思います．<br>
+
+              <br>
+            </p>
+          </div>
+          <div class="pruduct-img">
+            <img src="../img/nyutaishitu_example.png">
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      <div class="footer">
+        <p>2025 Tomoya Itagaki</p>
+      </div>
+
+
+    </main>
+  </div>
+
+</body>
