@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>SorToio-Itagaki</title>
+  <meta name="description" content="SorToioの詳細">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="products.css">
+  <link rel="stylesheet" href="detail_product.css">
+
+  <!-- [if lt IE 9] -->
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <!-- [endif] -->
+
+  <script src="IE_web.js"></script>
+</head>
+
+<body>
+  <div class="for-pc">
+    <header class="header">
+      <div class="header-inner inner">
+        <a href="home.html" class="header-Itagaki">Tomoya Itagaki</a>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a class="header-nav-item-link" href="home.html"
+                style="text-decoration:none;"><b>PROFILE</b></a></li>
+            <li class="header-nav-item"><a class="header-nav-item-link" href="products.html"><b>制作物</b></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ここから書く(PC) -->
+      <h1 class="heading">SorToio<small>(卒業研究)</small></h1>
+
+      <div class="Detailed-production">
+
+        <div class="product-section">
+          <div class="flex-text">
+            <h2 class="subheading">概要</h2>
+            <p class="break-keep">
+              小型群ロボットであるtoioを<wbr>物理的に動かすことにより，<wbr>
+              アルゴリズム学習を支援するシステム<wbr>「SorToio」を提案している．<wbr>
+              toioに値を持たせ，それらを並べたものを<wbr>配列として扱うことで，<wbr>
+              配列内の要素の比較や交換を<wbr>ロボットの動きで表現できる．<wbr>
+              <br>
+              <small>※動画00:23~ 「<s>右の値</s>の方が～」→「<u>左の値</u>の方が～」です...</small>
+            </p>
+          </div>
+          <div class="youtube">
+            <iframe width="592" height="333" src="https://www.youtube.com/embed/aAhtvAM0Heg?si=Z-pD0Knd2wl9xbwy"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+
+
+
+        <div class="product-section">
+          <div class="flex-text">
+            <h2 class="subheading">コンセプト</h2>
+            <p >
+              toioに値を持たせて1台を定数，それらを並べることで配列として扱う．<br>
+              配列内の要素の比較・交換を表現でき，ソート等のアルゴリズムを物理的に可視化できる．<br>
+              アルゴリズムを選択すると，ロボットが順に移動して，ソート等のアルゴリズムを物理的な動きとして観察できる．<br>
+              さらに，ロボットの動きを逆再生したり，クイズ機能などを実装してアルゴリズム学習を支援する．<wbr>
+              <br><br>
+              システム構成は右図の通り．
+              <br>
+            </p>
+          </div>
+          <div class="pruduct-img">
+            <img src="img/System_configuration_v3.jpg">
+          </div>
+        </div>
+
+        <div class="product-section">
+          <div class="flex-text">
+            <h2 class="subheading">実装</h2>
+            <p>
+              本研究では，小型ロボットに「toio」を用いている．<br>
+              toioは専用ライブラリが公開されており，本実装ではPythonライブラリを利用している．<br>
+              <br>
+              toioに載せる値ラベルは3DプリンタとUVプリンタで作成した．<br>
+              また，動作中にロボットを止めたり逆再生させるなどの機能を選択するために，「システム制御用toio」を実装した．<br>
+            </p>
+          </div>
+          <div class="youtube">
+            <iframe width="592" height="333" src="https://www.youtube.com/embed/a0--khi137M?si=jmc40jjA4e9kuwNL"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="product-section">
+          <div class="flex-text">
+            <h2 class="subheading">実装例</h2>
+            <p>
+              バブルソート，ヒープソート，スタック・キューを実装した．
+            </p>
+          </div>
+          <div class="youtube">
+            <iframe width="592" height="333" src="https://www.youtube.com/embed/0h1ppLtLroY?si=zaaqfskow8qGADdU"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="product-section">
+          <div class="text">
+            <h2 class="subheading">書誌情報</h2>
+            <p>
+              板垣 智也, 塚田 浩二. SorToio: 小型群ロボットを用いたアルゴリズム学習支援システムの提案. 日本ソフトウェア科学会 WISS2024 予稿集, デモ発表 3-A08. 2024-12.
+              <a href="https://www.wiss.org/WISS2024/award.html" target="_blank" rel="noopener noreferrer">【対話発表賞（一般）】</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- <div class="Background">
+          <h2 class="subheading">背景</h2>
+          <p class="text">
+            近年，情報教育が早期化に伴い，理解しやすいプログラミング教材が普及している．<br>
+            HCI研究分野では手に取って扱えるオブジェクト（TUI）を使ったプログラミング手法が増えており，<br
+            >GUIよりも初心者向けの設計が可能である．<br>
+            <br>
+            TUIを使ったプログラミング手法の研究が進む一方で，TUIを使ったアルゴリズム学習手法は少ない．<br>
+            本研究では，小型ロボットを使ったタンジブルなアルゴリズム学習支援システム「SorToio」を提案する．<br>
+          </p>
+        </div>      -->
+
+
+      <div class="footer">
+        <p>2025 Tomoya Itagaki</p>
+      </div>
+
+    </main>
+  </div>
+
+
+</body>

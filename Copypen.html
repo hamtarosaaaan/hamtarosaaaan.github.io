@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>Copypen-Itagaki</title>
+  <meta name="description" content="Copypenの詳細">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="products.css">
+  <link rel="stylesheet" href="detail_product.css">
+
+  <!-- [if lt IE 9] -->
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <!-- [endif] -->
+
+  <script src="IE_web.js"></script>
+</head>
+
+<body>
+  <div class="for-pc">
+    <header class="header">
+      <div class="header-inner inner">
+        <a href="home.html" class="header-Itagaki">Tomoya Itagaki</a>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a class="header-nav-item-link" href="home.html"
+                style="text-decoration:none;"><b>PROFILE</b></a></li>
+            <li class="header-nav-item"><a class="header-nav-item-link" href="products.html"><b>制作物</b></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ここから書く(PC) -->
+      <h1 class="heading">Copypen</h1>
+
+      <div class="Detailed-production">
+
+        <div class="product-section">
+          <div class="flex-text">
+            <h2 class="subheading">概要</h2>
+            <p>
+              このプロジェクトでは，「フロッタージュ（こすり出し）」の気持ちよさに着目し，サーボモータで鉛筆の芯を出し引きすることで，
+              フロッタージュの感覚を再現するペンを開発した．
+              <br><br>
+              また，イラストをこすって読み取ることで，好きなイラストで
+              フロッタージュできることを目指した．
+            </p>
+          </div>
+          <div class="youtube">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qvvbc8FNQ-0?si=aGOrmI0e74FwF_cA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+
+
+
+        <div class="product-section">
+          <div class="flex-text">
+            <h2 class="subheading">システム</h2>
+            <p>
+              サーボモータでギアを回すことで鉛筆の芯の押出をしている．
+              イラストの読み取りはフォトリフレクタで行い，
+              位置の取得はマウス基板を用いている．
+              <br><br>
+              取得したデータはM5Stack Grayで処理を行い，
+              液晶で読み込んだイラストの表示を行う
+              <br>
+            </p>
+          </div>
+          <div class="pruduct-img">
+            <img src="img/copypen-structure.png">
+          </div>
+        </div>
+
+        <div class="product-section">
+          <div class="flex-text">
+            <h2 class="subheading">担当箇所</h2>
+            <p>
+              Copypenは6人グループで制作しており，<br>
+              筆者は使用素材の選定内部構造の設計，筐体の作成など，ハードウェアを中心に携わっていた．<br>
+
+              <br>
+              また，プロジェクトのWebページのコーディングも行っている，<br>
+              <a href="https://interactionelements2023.github.io/InteractionElements.guthub.io/home.html" target="_blank" rel="noopener noreferrer">
+                プロジェクト（Interaction Elements）のWebページ
+              </a>
+              
+            </p>
+          </div>
+          <div class="pruduct-img">
+            <img src="img/copypen-acrylic.jpg">
+          </div>
+        </div>
+
+        <div class="product-section">
+          <div class="flex-text">
+            <h2 class="subheading">課題</h2>
+            <ul>
+              <li>位置取得にマウスを使っているため回転に弱い（右図）</li>
+              <li>筐体がペンとは呼べないほど大きい</li>
+              <li>線が細い・薄い</li>
+            </ul>
+          </div>
+          <div class="pruduct-img">
+            <img src="img/copypen-problem.jpg">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer">
+        <p>2025 Tomoya Itagaki</p>
+      </div>
+
+    </main>
+  </div>
+
+</body>

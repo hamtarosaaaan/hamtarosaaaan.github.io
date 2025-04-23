@@ -1,0 +1,103 @@
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 30px;
+  border: 1px solid #333;
+}
+
+.product .my-photo {
+  width: 200px; /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.product .text-position {
+  text-align: left;
+  font-size: 17px;
+  
+}
+
+.product .text{
+  padding: 0px 10px 20px;
+  margin: 0px;
+}
+.product .subheading{
+  padding: 0px 0px 5px;
+  margin: 0px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .16);
+  color: #212121;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 20px auto 30px;
+  padding-bottom: 10px;
+  max-width: 1000px;
+}
+
+@media only screen and (max-width : 700px) {
+  .card {
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .16);
+    color: #212121;
+    text-decoration: none;
+    display: block;
+    align-items: center;
+    justify-content: left;
+    margin: 20px auto 30px;
+    padding-bottom: 10px;
+    max-width: 100%;
+  }
+}
+
+.card-image img{
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.card-text{
+  margin-left: 20px;
+  width: 700px;
+  text-align: left;
+}
+
+@media only screen and (max-width : 700px) {
+  .card-text{
+    margin: auto;
+    max-width: 100%;
+    text-align: left;
+    align-items: center;
+    justify-content: left;
+  }
+}
+
+
+.detail-button a{
+  background: #eee;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 280px;
+  padding: 10px 25px;
+  color: #313131;
+
+  font-weight: 500;
+}
+.detail:hover, a.detail:hover{
+  color: #fff;
+  background: #ee9e66;
+}

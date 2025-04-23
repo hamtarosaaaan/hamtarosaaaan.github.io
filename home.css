@@ -1,0 +1,249 @@
+/* noto sans JPのインストール */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+  /* フォントの決定, 英語はFutura 日本語はNoto, windowsは全部Notoになっちゃうかも*/
+  font-family: Futura, 'Noto Sans JP', 'Century Gothic', YuGothic, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif;
+}
+
+/* PCヘッダー */
+.inner {
+
+    margin: 0 auto;
+    padding: 0 25px;
+    box-sizing: content-box;
+  }
+  
+  .header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.80);
+    z-index: 100;               /* 重なり順指定 */
+  }
+  
+  .header-inner {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-title a {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header-nav {
+    margin-left: auto;
+  }
+
+  .header-Itagaki{
+    font-size: 25px;
+  }
+  
+  .for-pc ul {
+    list-style: none;
+    white-space: nowrap;
+  }
+  
+  .header-nav-list {
+    display: flex;
+  }
+  
+  .header-nav-item:not(:first-child) {
+    margin-left: 30px;
+  }
+  
+  .header-nav-item-link {
+    display: block;
+    color: #333;
+    height: 20px;
+    line-height: 20px;
+  }
+
+  /* main */
+
+  /* 汎用 */
+  .heading{
+    margin: 0 auto 20px;
+    max-width: 700px;
+    padding: 10px 10px;
+    border-bottom: 3px dotted #000;
+    background: #eaf7ff;
+  }
+
+  /* PROFILEのCSS */
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 30px;
+  }
+
+  @media only screen and (max-width : 800px) {
+    .profile {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0 30px;
+    }
+  }
+
+  .profile .my-photo {
+    width: 300px; /*画像サイズ指定*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .profile .text-position {
+    text-align: left;
+    font-size: 17px;
+    width: 500px;
+  }
+
+  @media only screen and (max-width : 800px) {
+    .profile .text-position {
+      text-align: left;
+      font-size: 17px;
+      max-width: 100%;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .profile .text{
+    padding: 0px 10px 20px;
+    margin: 0px;
+  }
+  .profile .subheading{
+    padding: 0px 0px 5px;
+    margin: 0px;
+  }
+
+  /* 経歴のCSS */
+  .carrer{
+    margin: 20px 0 50px;
+  }
+
+  .carrer table{
+    margin: auto;
+  }
+
+  .carrer th{
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 2px solid #000;
+    padding: 10px;
+  }
+
+  .carrer .date{
+      width: 20%;
+  }
+
+  /* 資格のCSS */
+  .qualifying{
+    margin: 20px 0 50px;
+  }
+
+  .qualifying table{
+    margin: auto;
+  }
+
+  .qualifying th{
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 2px solid #000;
+    padding: 10px;
+  }
+
+  .qualifying .date{
+      width: 30%;
+  }
+
+  /* 趣味のCSS */
+  .kyopro, .Bambu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 30px;
+  }
+
+  @media only screen and (max-width : 800px) {
+    .kyopro, .Bambu {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0 30px;
+    }
+  }
+
+  .hobby .my-photo {
+    width: 400px; /*画像サイズ指定*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hobby .text-position {
+    text-align: left;
+    width: 450px;
+    font-size: 17px;
+    
+  }
+
+  @media only screen and (max-width : 800px) {
+    .hobby .text-position {
+      text-align: left;
+      max-width: 100%;
+      font-size: 17px;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .hobby .text{
+    padding: 0px 10px 20px;
+    margin: 0px;
+  }
+  .hobby .subheading{
+    padding: 0px 0px 5px;
+    margin: 0px;
+  }
+
+
+
+
+  /* 本文 */
+  main {
+    margin-top: 50px;
+    /* ヘッダーの幅は50px */
+    text-align: center;
+    margin: px 111px 8%; 
+    width: 100%;
+  }
+
+  .footer{
+    color: #000;
+    text-align: center;
+    /* font-family: Futura; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 185px;
+    margin-bottom: 30px;
+  }
+  
+  .all {
+    max-width: 900px;
+    margin: auto;
+  }
