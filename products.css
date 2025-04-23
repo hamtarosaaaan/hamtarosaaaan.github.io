@@ -101,3 +101,8 @@
   color: #fff;
   background: #ee9e66;
 }
+
+.text{
+  max-width: 800px;
+  margin: 0 auto;
+}
