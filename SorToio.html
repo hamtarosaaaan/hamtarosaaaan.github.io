@@ -42,41 +42,22 @@
 
         <div class="product-section">
           <div class="flex-text">
-            <h2 class="subheading">デモ動画(2025-07版)</h2>
+            <h2 class="subheading">概要</h2>
             <p class="break-keep">
-              小型ロボットを用いた，アルゴリズム学習支援システム「SorToio」を提案する．<br>
+              小型群ロボットであるtoioを<wbr>物理的に動かすことにより，<wbr>
+              アルゴリズム学習を支援するシステム<wbr>「SorToio」を提案している．<wbr><br><br
+              toioに値を持たせ，それらを並べたものを<wbr>配列として扱うことで，<wbr>
+              配列内の要素の比較や交換を<wbr>ロボットの動きで表現できる．<wbr>
               
             </p>
           </div>
           <div class="youtube">
-            <iframe width="592" height="333" src="https://www.youtube.com/embed/fhv9SfYm0rA?si=1RDLvguyK8OU8DNX"
+            <iframe width="592" height="333" src="https://www.youtube.com/embed/DovX5SDYhfo?si=3-MZa8GzkxSFxl5Z" 
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
-
-        <div class="product-section">
-          <div class="flex-text">
-            <h2 class="subheading">概要</h2>
-            <p class="break-keep">
-              小型群ロボットであるtoioを<wbr>物理的に動かすことにより，<wbr>
-              アルゴリズム学習を支援するシステム<wbr>「SorToio」を提案している．<wbr>
-              toioに値を持たせ，それらを並べたものを<wbr>配列として扱うことで，<wbr>
-              配列内の要素の比較や交換を<wbr>ロボットの動きで表現できる．<wbr>
-              <br>
-              <small>※動画00:23~ 「<s>右の値</s>の方が～」→「<u>左の値</u>の方が～」です...</small>
-            </p>
-          </div>
-          <div class="youtube">
-            <iframe width="592" height="333" src="https://www.youtube.com/embed/aAhtvAM0Heg?si=Z-pD0Knd2wl9xbwy"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-        </div>
-
-
 
         <div class="product-section">
           <div class="flex-text">
@@ -86,13 +67,11 @@
               これにより配列内の要素の比較・交換を表現でき，ソート等のアルゴリズムを物理的に可視化できる．<br>
               アルゴリズムを選択すると，ロボットが順に移動して，ソート等のアルゴリズムを物理的な動きとして観察できる．<br>
               さらに，ロボットの動きを逆再生したり，クイズ機能などを実装してアルゴリズム学習を支援する．<wbr>
-              <br><br>
-              システム構成は右図の通り．
               <br>
             </p>
           </div>
           <div class="pruduct-img">
-            <img src="img/System_configuration_v3.jpg">
+            <img src="img/SorToio_3_Array.jpg">
           </div>
         </div>
 
@@ -102,16 +81,11 @@
             <p>
               本研究では，小型ロボットに「toio」を用いている．<br>
               toioは専用ライブラリが公開されており，本実装ではPythonライブラリを利用している．<br>
-              <br>
-              toioに載せる値ラベルは3DプリンタとUVプリンタで作成した．<br>
-              また，動作中にロボットを止めたり逆再生させるなどの機能を選択するために，「システム制御用toio」を実装した．<br>
+              ユーザはtoioをタップしたり，持ち上げたりすることで，様々な機能を利用できる．<br>
             </p>
           </div>
-          <div class="youtube">
-            <iframe width="592" height="333" src="https://www.youtube.com/embed/a0--khi137M?si=jmc40jjA4e9kuwNL"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="pruduct-img">
+            <img src="img/SorToio_processV6.png">
           </div>
         </div>
 
@@ -136,6 +110,10 @@
             <p>
               板垣 智也, 塚田 浩二. SorToio: 小型群ロボットを用いたアルゴリズム学習支援システムの提案. 日本ソフトウェア科学会 WISS2024 予稿集, デモ発表 3-A08. 2024-12.
               <a href="https://www.wiss.org/WISS2024/award.html" target="_blank" rel="noopener noreferrer">【対話発表賞（一般）】</a>
+            </p>
+            <p>
+              Tomoya Itagaki and Koji Tsukada. SorToio: Learning Support System for Algorithm using a Small Swarm Robot. In Adjunct Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology (UIST Adjunct ’25). Article 53, pp. 1–3. 2025. 
+              <a href="https://doi.org/10.1145/3746058.3759005" target="_blank" rel="noopener noreferrer">https://doi.org/10.1145/3746058.3759005</a>
             </p>
           </div>
         </div>
