@@ -532,7 +532,7 @@ a {
 /* ==================== WORKS GRID ==================== */
 .works-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--card-min-width), 1fr));
   gap: var(--card-vertical-gap) 24px; /* row gap / tighter column gap */
   margin-bottom: 60px;
   max-width: 1280px;
@@ -1318,10 +1318,6 @@ a {
     --header-gif-size: 120% auto;
   }
 
-  .works-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .navbar-menu {
     gap: 20px;
     font-size: 14px;
@@ -1466,10 +1462,6 @@ a {
   }
 
   .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .works-grid {
     grid-template-columns: 1fr;
   }
 
