@@ -13,7 +13,7 @@
 
 :root {
   /* Layout variables (can be changed from JS) */
-  --card-min-width: clamp(300px, 36vw, 520px);
+  --card-min-width: clamp(260px, 28vw, 360px);
   --card-vertical-gap: 96px;
   --site-section-padding-y: 120px;
   --site-hero-padding-y: 120px;
@@ -532,10 +532,10 @@ a {
 /* ==================== WORKS GRID ==================== */
 .works-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--card-min-width), 1fr)); /* wider cards */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--card-vertical-gap) 24px; /* row gap / tighter column gap */
   margin-bottom: 60px;
-  max-width: 980px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -600,7 +600,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: var(--card-min-width); /* prevent cards from expanding when few columns */
+  max-width: 100%;
 }
 
 .work-card:hover {
@@ -791,14 +791,13 @@ a {
 
 .page-header-square {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  width: min(260px, 52vw);
-  height: min(260px, 52vw);
-  transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.74);
-  border: 2px solid rgba(200, 200, 200, 0.92);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(255, 255, 255, 0.52) inset;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  background: rgba(255, 255, 255, 0.66);
+  border: 0;
+  box-shadow: none;
   z-index: 1;
   pointer-events: none;
 }
@@ -806,6 +805,19 @@ a {
 .page-header.has-video .container {
   position: relative;
   z-index: 2;
+}
+
+.home-header {
+  background: transparent;
+}
+
+.home-header::before {
+  display: none;
+}
+
+.home-header .container {
+  position: relative;
+  z-index: 1;
 }
 
 .simple-header {
@@ -1304,6 +1316,10 @@ a {
     --card-min-width: clamp(280px, 78vw, 380px);
     --work-header-height: 160px;
     --header-gif-size: 120% auto;
+  }
+
+  .works-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .navbar-menu {
