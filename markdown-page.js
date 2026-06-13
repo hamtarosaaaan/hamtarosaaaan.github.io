@@ -6,6 +6,29 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   let markdown = '';
+  const pathname = window.location.pathname.replace(/\\/g, '/');
+  const pageDepthPrefix = pathname.includes('/pages/projects/') ? '../../' : pathname.includes('/pages/') ? '../' : './';
+
+  const resolveAssetUrl = (value) => {
+    if (!value) {
+      return value;
+    }
+
+    if (/^(https?:|data:|mailto:|tel:|#|\/)/i.test(value)) {
+      return value;
+    }
+
+    try {
+      return new URL(`${pageDepthPrefix}${value}`, window.location.href).href;
+    } catch {
+      return value;
+    }
+  };
+
+  const rewriteAssetUrlsInHtml = (html) => html
+    .replace(/\b(src|href)=("|')([^"']+)\2/gi, (match, attr, quote, value) => {
+      return `${attr}=${quote}${resolveAssetUrl(value)}${quote}`;
+    });
 
   // Try to get markdown from data-file attribute (external file)
   const dataFile = outputElement.dataset.file;
@@ -60,7 +83,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       output = output.replace(/\*(.+?)\*/g, '<em>$1</em>');
       output = output.replace(/_(.+?)_/g, '<em>$1</em>');
       output = output.replace(/`(.+?)`/g, '<code>$1</code>');
-      output = output.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+      output = output.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, text, url) => `<a href="${resolveAssetUrl(url)}" target="_blank" rel="noopener noreferrer">${text}</a>`);
       return output;
     };
 
@@ -92,7 +115,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       if (/^<[^>]+>/.test(trimmed)) {
         closeLists();
-        html.push(trimmed);
+        html.push(rewriteAssetUrlsInHtml(trimmed));
         continue;
       }
 

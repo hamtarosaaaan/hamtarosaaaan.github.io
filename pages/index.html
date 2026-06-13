@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomoya Itagaki</title>
+  <meta name="description" content="itagakiの自己紹介サイト">
+  <link rel="stylesheet" href="../new_style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <ul class="navbar-menu">
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header simple-header has-video index-white-cover">
+    <video class="page-header-video" src="../Sortoio%20Bubble%20X2.mp4" autoplay loop muted playsinline aria-hidden="true" tabindex="-1" preload="auto"></video>
+    <div class="container">
+      <div class="title-panel">
+        <h1 class="page-title">板垣のやってきたこと</h1>
+        <p class="page-subtitle">これまで作ってきたものを置いておきます</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="works-section">
+    <div class="container">
+      <div class="filter-tabs" role="tablist" aria-label="カテゴリで絞る">
+        <button class="filter-btn active" data-filter="all" role="tab">すべて</button>
+        <button class="filter-btn" data-filter="研究" role="tab">研究</button>
+        <button class="filter-btn" data-filter="趣味" role="tab">趣味</button>
+        <button class="filter-btn" data-filter="ブログ" role="tab">ブログ</button>
+      </div>
+      <div class="works-grid" id="projects-grid" data-source="../content/projects.json"></div>
+    </div>
+  </section>
+
+  <section class="home-intro markdown-page">
+    <div class="container">
+      <article class="markdown-article">
+        <div id="markdown-output" data-file="../content/home.md" class="markdown-content home-markdown"></div>
+      </article>
+    </div>
+  </section>
+
+  <div class="toio-swarm-actions">
+    <button id="toio-swarm-button" type="button" class="toio-swarm-button">群れを出す</button>
+    <div id="toio-swarm-note" class="toio-swarm-note" role="status" aria-live="polite">特に意味はないです</div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Tomoya Itagaki</p>
+    </div>
+  </footer>
+
+  <script src="../new_script.js"></script>
+  <script src="../markdown-page.js"></script>
+</body>
+</html>

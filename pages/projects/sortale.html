@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SorTale - Tomoya Itagaki</title>
+  <meta name="description" content="SorTale project page">
+  <link rel="stylesheet" href="../../new_style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <ul class="navbar-menu">
+        <li><a href="../index.html" class="back-link" aria-label="プロジェクト一覧に戻る">← 一覧へ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header simple-header markdown-header">
+    <div class="container">
+      <div class="title-panel">
+        <!-- タイトル -->
+        <h1 class="page-title">SorTale</h1>
+        <!-- サブタイトル -->
+        <p class="page-subtitle">小型群ロボットによる物語を通したアルゴリズム学習支援手法の提案</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="markdown-page">
+    <div class="container">
+      <div class="toio-swarm-actions">
+        <!-- ボタン文言や説明を変えたい場合はここ -->
+        <button id="toio-swarm-button" type="button" class="toio-swarm-button" title="特に意味はありません" aria-label="特に意味はありません">群れを出す</button>
+      </div>
+      <article class="markdown-article">
+        <!-- 本文MDのパス -->
+        <div id="markdown-output" data-file="../../content/sortale.md" class="markdown-content"></div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Tomoya Itagaki</p>
+    </div>
+  </footer>
+
+  <script src="../../new_script.js"></script>
+  <script src="../../markdown-page.js"></script>
+</body>
+</html>

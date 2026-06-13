@@ -1,0 +1,49 @@
+[
+  {
+    "title": "SorToio",
+    "categories": ["研究"],
+    "projectType": "Research Project",
+    "description": "ソートアルゴリズムをtoioロボットの動きで可視化・体験できるシステム。複数のキューブロボットが整列する様子を通じて、アルゴリズムの仕組みを直感的に学べます。",
+    "tags": ["toio", "アルゴリズム", "ソート"],
+    "href": "projects/sortoio.html",
+    "image": "img/SorToio_Concept_p1v2.jpg",
+    "imageAlt": "SorToio の概念図",
+    "headerStyle": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+  }
+    ,
+    {
+      "title": "SorTale",
+      "categories": ["研究"],
+      "projectType": "Research Project",
+      "description": "人形劇の形式でソートアルゴリズムを表現するシステム．ソートに興味を持ってもらうためを目的としています．",
+      "tags": ["toio", "ストーリーテリング", "ソート"],
+      "href": "projects/sortale.html",
+      "image": "img/SorTale/SorTale_Concept.png",
+      "imageAlt": "SorTale のサムネイル",
+      "headerStyle": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"
+    }
+    ,
+    {
+      "title": "ダサセーターを作ろう！",
+      "categories": ["趣味", "ブログ"],
+      "projectType": "Hobby Project",
+      "description": "ダサセーターを作って，大学の教授陣に着せました．未来大アドベントカレンダー2025で書いたブログです．",
+      "tags": ["ダサセーター", "アドベントカレンダー"],
+      "href": "projects/dasase-ta.html",
+      "image": "img/Dasase-ta/dasase-ta_title.webp",
+      "imageAlt": "ダサセーターを作ろう のサムネイル",
+      "headerStyle": "linear-gradient(135deg, #111111 0%, #666666 100%)"
+    }
+,
+    {
+      "title": "自己紹介",
+      "categories": ["ブログ"],
+      "projectType": "Self Introduction",
+      "description": "板垣智也の自己紹介ページ。研究や制作の簡単な紹介を掲載しています。",
+      "tags": ["プロフィール"],
+      "href": "projects/self-introduction.html",
+      "image": "img/self-introduction/自分.jpg",
+      "imageAlt": "自己紹介のサムネイル",
+      "headerStyle": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+    }
+]
